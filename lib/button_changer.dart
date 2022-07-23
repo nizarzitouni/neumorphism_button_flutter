@@ -29,6 +29,11 @@ class _ButtonChangerState extends State<ButtonChanger> {
             function: () {
               print('Button Pressed');
             },
+            myWidget: Icon(
+              Icons.android,
+              size: 80,
+              color: _darkMode ? Colors.white : Colors.black,
+            ),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 50),

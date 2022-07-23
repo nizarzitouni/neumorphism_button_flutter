@@ -7,6 +7,7 @@ class NeumorphismButtonWidget extends StatelessWidget {
   final double height;
   final double borderRadiusOfButton;
   final Function function;
+  final Widget myWidget;
 
   const NeumorphismButtonWidget(
       {super.key,
@@ -15,7 +16,8 @@ class NeumorphismButtonWidget extends StatelessWidget {
       required this.width,
       required this.height,
       required this.borderRadiusOfButton,
-      required this.function});
+      required this.function,
+      required this.myWidget});
 
   @override
   Widget build(BuildContext context) {
@@ -55,12 +57,14 @@ class NeumorphismButtonWidget extends StatelessWidget {
                 )
               : null,
         ),
-        child: Icon(
-          Icons.android,
-          size: 80,
-          color: darkMode ? Colors.white : Colors.black,
-        ),
+        child: myWidget,
       ),
     );
   }
 }
+
+// Icon(
+//           Icons.android,
+//           size: 80,
+//           color: darkMode ? Colors.white : Colors.black,
+//         ),

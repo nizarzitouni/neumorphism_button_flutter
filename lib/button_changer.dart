@@ -24,8 +24,11 @@ class _ButtonChangerState extends State<ButtonChanger> {
             darkMode: _darkMode,
             height: 200,
             width: 200,
-            borderRadiusOfButton: 50,
+            borderRadiusOfButton: 100,
             threeDOn: _threeDOn,
+            function: () {
+              print('Button Pressed');
+            },
           ),
           Padding(
             padding: const EdgeInsets.only(top: 50),
